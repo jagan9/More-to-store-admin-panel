@@ -1,23 +1,23 @@
-const initState=null;
+const initState = null;
 
 
-const categoryPageReducer=(state=initState,action)=>{
+const categoryPageReducer = (state = initState, action) => {
 
-	switch(action.type){
+	switch (action.type) {
 		case "LOAD_PAGE":
-		state={...state,[action.category]:action.payload};
-		break;
+			state = { ...state, [action.category]: action.payload };
+			break;
 		case "DELETE_PAGE":
-		let newState=state;
+			let newState = state;
 
-		if(newState[action.payload]){
-			delete newState[action.payload];
-		}
-		state= newState;
-		
-		break;
+			if (newState[action.payload]) {
+				delete newState[action.payload];
+			}
+			state = newState;
+
+			break;
 		default:
-		break;
+			break;
 	}
 
 	return state;

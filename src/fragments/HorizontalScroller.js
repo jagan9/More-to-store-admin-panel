@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box,Typography} from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import ProductView from './ProductView.js';
 import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
@@ -8,8 +8,8 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 
 const HorizontalScroller = (props) => {
- console.log(props.products);
-	const [anchorEl, setAnchorEl] = React.useState(null);
+  console.log(props.products);
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -21,8 +21,8 @@ const HorizontalScroller = (props) => {
 
 
 
-	return (<>
-		<div style={{float:"right"}}>
+  return (<>
+    <div style={{ float: "right" }}>
       <IconButton
         aria-label="more"
         aria-controls="long-menu"
@@ -37,35 +37,35 @@ const HorizontalScroller = (props) => {
         keepMounted
         open={open}
         onClose={handleClose}
-        
-        
+
+
       >
-       
-           <MenuItem
-          onClick={()=>{
+
+        <MenuItem
+          onClick={() => {
             props.edit();
             handleClose();
           }}>EDIT</MenuItem>
-         <MenuItem onClick={()=>{
-            props.delete();
-            handleClose();
-          }}>DELETE</MenuItem>
-     
+        <MenuItem onClick={() => {
+          props.delete();
+          handleClose();
+        }}>DELETE</MenuItem>
+
       </Menu>
     </div>
-		<Box p="16px" style={{background:props.background}}>
+    <Box p="16px" style={{ background: props.background }}>
 
-			<Typography variant="h5">{props.title}</Typography>
-			
-			<Box display="flex" overflow="auto">
+      <Typography variant="h5">{props.title}</Typography>
 
-			{props.products.map((item,index)=><ProductView key={index} item={item}/>)}
-			
-			
-			</Box>
-		</Box>
-	</>
-	)
+      <Box display="flex" overflow="auto">
+
+        {props.products.map((item, index) => <ProductView key={index} item={item} />)}
+
+
+      </Box>
+    </Box>
+  </>
+  )
 }
 
 export default HorizontalScroller

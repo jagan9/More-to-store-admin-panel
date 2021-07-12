@@ -35,40 +35,40 @@ const BannerSlider = (props) => {
     setAnchorEl(null);
   };
 
-//console.log(props.images)
+  //console.log(props.images)
   return (
     <div>
-      <div style={{background:"white",textAlign:"right"}}>
-      <IconButton
-        aria-label="more"
-        aria-controls="long-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-      >
-        <MoreVertIcon />
-      </IconButton>
-      <Menu
-        id="long-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={open}
-        onClose={handleClose}
-        
-        
-      >
-       
+      <div style={{ background: "white", textAlign: "right" }}>
+        <IconButton
+          aria-label="more"
+          aria-controls="long-menu"
+          aria-haspopup="true"
+          onClick={handleClick}
+        >
+          <MoreVertIcon />
+        </IconButton>
+        <Menu
+          id="long-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={open}
+          onClose={handleClose}
+
+
+        >
+
           <MenuItem
-          onClick={()=>{
-            props.edit();
-            handleClose();
-          }}>EDIT</MenuItem>
-          <MenuItem onClick={()=>{
+            onClick={() => {
+              props.edit();
+              handleClose();
+            }}>EDIT</MenuItem>
+          <MenuItem onClick={() => {
             props.delete();
             handleClose();
           }}>DELETE</MenuItem>
-     
-      </Menu>
-    </div>
+
+        </Menu>
+      </div>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -77,10 +77,10 @@ const BannerSlider = (props) => {
       >
         {props.images.map((step, index) => (
 
-          <div key={index} style={{width:"100%",background:step.color}}>
-          
+          <div key={index} style={{ width: "100%", background: step.color }}>
+
             {Math.abs(activeStep - index) <= 2 ? (
-              <img style={{width:"100%" ,height:"250px",objectFit:"scale-down"}} src={step.banner}  alt="" />
+              <img style={{ width: "100%", height: "250px", objectFit: "scale-down" }} src={step.banner} alt="" />
             ) : null}
           </div>
         ))}

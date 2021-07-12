@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/More-to-store-admin-panel/static/css/main.e2e9fc67.chunk.css",
+    "main.js": "/More-to-store-admin-panel/static/js/main.9f204e32.chunk.js",
+    "main.js.map": "/More-to-store-admin-panel/static/js/main.9f204e32.chunk.js.map",
+    "runtime-main.js": "/More-to-store-admin-panel/static/js/runtime-main.bfe04f85.js",
+    "runtime-main.js.map": "/More-to-store-admin-panel/static/js/runtime-main.bfe04f85.js.map",
+    "static/js/2.c258f460.chunk.js": "/More-to-store-admin-panel/static/js/2.c258f460.chunk.js",
+    "static/js/2.c258f460.chunk.js.map": "/More-to-store-admin-panel/static/js/2.c258f460.chunk.js.map",
+    "index.html": "/More-to-store-admin-panel/index.html",
+    "precache-manifest.38f47885c4873c4ee3bfec1fb22466d6.js": "/More-to-store-admin-panel/precache-manifest.38f47885c4873c4ee3bfec1fb22466d6.js",
+    "service-worker.js": "/More-to-store-admin-panel/service-worker.js",
+    "static/css/main.e2e9fc67.chunk.css.map": "/More-to-store-admin-panel/static/css/main.e2e9fc67.chunk.css.map",
+    "static/js/2.c258f460.chunk.js.LICENSE.txt": "/More-to-store-admin-panel/static/js/2.c258f460.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bfe04f85.js",
+    "static/js/2.c258f460.chunk.js",
+    "static/css/main.e2e9fc67.chunk.css",
+    "static/js/main.9f204e32.chunk.js"
+  ]
+}

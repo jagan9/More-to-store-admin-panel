@@ -11,7 +11,7 @@ It uses Materail UI, Material Icons, react-redux, Redux, Firebase, Redux-Thunk.
 ### Live Website
 Admin Panel is Hosted on github Pages. You can see live demo of my project. 
 Link to the live More-To-Store Admin Panel is given below.<br/>
-[link](https://balashekhar.github.io/react-deploy/)
+[link](https://jagan9.github.io/More-to-store-admin-panel/#/)
 <br/>
 <br/>
 <br/>
